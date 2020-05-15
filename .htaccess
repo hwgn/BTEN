@@ -1,0 +1,5 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} .
+RewriteCond %{HTTP_HOST} !^pxnt.github.io/BTEN/
+RewriteRule ^(.*)$ http://bte-n.github.io/$1 [R=301,L]
