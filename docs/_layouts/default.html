@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
 <head>
-    <meta http-equiv="Refresh" content="5"; url="https://bte-n.github.io/" />
     <title>BTE:N | {{ page.title }}</title>
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="120x120" href="/BTEN/icons/apple-touch-icon.png" />
@@ -14,6 +13,9 @@
     <!-- Google Analytics, Language Picker, Dropdown Click -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165741526-1"></script>
     <script>
+        
+        // similar behavior as an HTTP redirect
+window.location.replace("https://bte-n.github.io/");
 
         function handleHash() {
             if (!location.hash) return
